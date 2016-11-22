@@ -20,68 +20,50 @@
         <div class="callout">
           <h3>We&rsquo;re stoked you want to read our tutorial regarding Scheme List! </h3>
           <p>To get going, here's an introduction regarding Scheme List!</p>
-          <p>Lists in Scheme are denoted with </p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+          <p>Lists in Scheme are denoted with a single quote followed by an opening parenthesis, the content of the list, and a closing parenthesis.</p>
+	  <p>The quote in the beginning prevents Scheme from evaluating it</p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
+        <h5>Here&rsquo;s some things to keep in mind:</h5>
         <!-- Grid Example -->
 
         <div class="row">
           <div class="large-12 columns">
             <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
+              <p>Each list has two parts: the first element and the rest of the list!</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="large-6 medium-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>The first element is accessed via (car list).</p>
             </div>
           </div>
           <div class="large-6 medium-6 columns">
             <div class="primary callout">
-              <p>Six columns</p>
+              <p>The rest of the list is accessed through (cdr list).</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>The return for (car list) is either an element if the length is at least one, or error if it's an empty list.</p>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>Empty lists are written as '()<br><br><br><br></p>
             </div>
           </div>
           <div class="large-4 medium-4 small-4 columns">
             <div class="primary callout">
-              <p>Four columns</p>
+              <p>The return for (cdr list) is either a non-empty list if the length is at least one, or a null list if the length is 0.</p>
             </div>
           </div>
         </div>
@@ -93,7 +75,7 @@
           <div class="row">
             <div class="large-12 columns">
               <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
+              <input type="submit" placeholder="Next" />
             </div>
           </div>
           <div class="row">
